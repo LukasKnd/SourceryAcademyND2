@@ -36,9 +36,51 @@ button {
   display: flex;
   justify-content: space-between;
   border: 2px solid black;
+  border-radius: 5px;
   padding: 8px;
+}
+
+.complete-todo-item {
+  background-color: rgb(150, 165, 180);
 }
 
 .todo-item:not(:last-child) {
   margin-bottom: 4px;
 }
+
+.complete-button:hover {
+    color: green;
+    border-color: green;
+}
+
+.delete-button:hover {
+    color: red;
+    border-color: red;
+}
+
+.submit-button:hover {
+    color: blue;
+    border-color: blue;
+}
+
+.add-todo-form {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-todo-form {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-todo-form input {
+    flex-grow: 1;
+}
+
+.add-todo-form input::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
